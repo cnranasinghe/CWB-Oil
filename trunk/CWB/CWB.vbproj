@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F1566B8-1674-40B2-9231-16660A25A4D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CWB.My.MyApplication</StartupObject>
+    <RootNamespace>CWB</RootNamespace>
+    <AssemblyName>CWB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>CWB.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\CWB_oil\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CWB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CWB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>21B2FA0D8723F134B20100CC143B3B11FA33C9C2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CWB_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.Charts.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.Data.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.PivotGrid.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.Printing.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.Utils.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.Utils.v15.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraBars.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraCharts.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraCharts.v15.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraEditors.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraLayout.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraPivotGrid.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraPrinting.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraReports.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress.XtraReports.v15.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\Lib\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CWBWindowsForms.vb" />
+    <Compile Include="frmAlreadyExists.designer.vb">
+      <DependentUpon>frmAlreadyExists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlreadyExists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBulkSettlement.Designer.vb">
+      <DependentUpon>frmBulkSettlement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBulkSettlement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerSummary.Designer.vb">
+      <DependentUpon>frmCustomerSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailySummary.Designer.vb">
+      <DependentUpon>frmDailySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompany.designer.vb">
+      <DependentUpon>frmCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomers.Designer.vb">
+      <DependentUpon>frmCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteYesNo.Designer.vb">
+      <DependentUpon>frmDeleteYesNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployers.designer.vb">
+      <DependentUpon>frmEmployers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmError.designer.vb">
+      <DependentUpon>frmError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenses.designer.vb">
+      <DependentUpon>frmExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemstoOrder.Designer.vb">
+      <DependentUpon>frmItemstoOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemstoOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudit.Designer.vb">
+      <DependentUpon>frmAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogBookSummary.Designer.vb">
+      <DependentUpon>frmLogBookSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogBookSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNetworkAvailable.Designer.vb">
+      <DependentUpon>frmNetworkAvailable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNetworkAvailable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOk.designer.vb">
+      <DependentUpon>frmOk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayBills.designer.vb">
+      <DependentUpon>frmPayBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayBills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreviousBills.Designer.vb">
+      <DependentUpon>frmPreviousBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreviousBills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.vb">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfitLoss.Designer.vb">
+      <DependentUpon>frmProfitLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfitLoss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchases.designer.vb">
+      <DependentUpon>frmPurchases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceivePayments.designer.vb">
+      <DependentUpon>frmReceivePayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceivePayments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.designer.vb">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSavedOk.designer.vb">
+      <DependentUpon>frmSavedOk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSavedOk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStock.designer.vb">
+      <DependentUpon>frmStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockBalance.Designer.vb">
+      <DependentUpon>frmStockBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliers.designer.vb">
+      <DependentUpon>frmSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateYesNo.designer.vb">
+      <DependentUpon>frmUpdateYesNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserLogins.designer.vb">
+      <DependentUpon>frmUserLogins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLogins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="xrProfitnLoss.Designer.vb">
+      <DependentUpon>xrProfitnLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrProfitnLoss.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrReportHeader.Designer.vb">
+      <DependentUpon>xrReportHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrReportHeader.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSales.Designer.vb">
+      <DependentUpon>xrSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAlreadyExists.resx">
+      <DependentUpon>frmAlreadyExists.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBulkSettlement.resx">
+      <DependentUpon>frmBulkSettlement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerSummary.resx">
+      <DependentUpon>frmCustomerSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailySummary.resx">
+      <DependentUpon>frmDailySummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompany.resx">
+      <DependentUpon>frmCompany.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomers.resx">
+      <DependentUpon>frmCustomers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteYesNo.resx">
+      <DependentUpon>frmDeleteYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployers.resx">
+      <DependentUpon>frmEmployers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmError.resx">
+      <DependentUpon>frmError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenses.resx">
+      <DependentUpon>frmExpenses.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemstoOrder.resx">
+      <DependentUpon>frmItemstoOrder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudit.resx">
+      <DependentUpon>frmAudit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogBookSummary.resx">
+      <DependentUpon>frmLogBookSummary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNetworkAvailable.resx">
+      <DependentUpon>frmNetworkAvailable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOk.resx">
+      <DependentUpon>frmOk.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayBills.resx">
+      <DependentUpon>frmPayBills.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreviousBills.resx">
+      <DependentUpon>frmPreviousBills.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfitLoss.resx">
+      <DependentUpon>frmProfitLoss.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchases.resx">
+      <DependentUpon>frmPurchases.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceivePayments.resx">
+      <DependentUpon>frmReceivePayments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSavedOk.resx">
+      <DependentUpon>frmSavedOk.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStock.resx">
+      <DependentUpon>frmStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockBalance.resx">
+      <DependentUpon>frmStockBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliers.resx">
+      <DependentUpon>frmSuppliers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateYesNo.resx">
+      <DependentUpon>frmUpdateYesNo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserLogins.resx">
+      <DependentUpon>frmUserLogins.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrProfitnLoss.resx">
+      <DependentUpon>xrProfitnLoss.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrReportHeader.resx">
+      <DependentUpon>xrReportHeader.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSales.resx">
+      <DependentUpon>xrSales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CWB_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\CWBCommon.vbproj">
+      <Project>{8B150E50-B2C9-445E-A4D4-49F4F4286795}</Project>
+      <Name>CWBCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CWB.ico" />
+    <Content Include="Images\CWB.ico" />
+    <Content Include="Images\AccountBalance.ico" />
+    <Content Include="Images\accpay.png" />
+    <Content Include="Images\accrece.png" />
+    <Content Include="Images\AIM63.png" />
+    <Content Include="Images\Alert.bmp" />
+    <Content Include="Images\Alert.png" />
+    <Content Include="Images\Alteration.png" />
+    <Content Include="Images\AutoFill.png" />
+    <Content Include="Images\Baniking.png" />
+    <Content Include="Images\BankAccount.ico" />
+    <Content Include="Images\Bill.ico" />
+    <Content Include="Images\Close.ico" />
+    <Content Include="Images\Close.png" />
+    <Content Include="Images\Collect.ico" />
+    <None Include="Resources\Audit.bmp" />
+    <None Include="Images\Company.png" />
+    <Content Include="Images\Compaq Computer.png" />
+    <Content Include="Images\CustomerRate.ico" />
+    <Content Include="Images\Customers.ico" />
+    <Content Include="Images\Customers.png" />
+    <Content Include="Images\CutomerL.png" />
+    <Content Include="Images\DebtorsSummary.ico" />
+    <Content Include="Images\Delete.ico" />
+    <Content Include="Images\delete.png" />
+    <None Include="Images\Info.png" />
+    <Content Include="Images\Error.ico" />
+    <None Include="Images\Error.png" />
+    <Content Include="Images\Network.ico" />
+    <Content Include="Images\display.png" />
+    <Content Include="Images\DisplaySelected.ico" />
+    <Content Include="Images\DMO.jpg" />
+    <Content Include="Images\Employer.ico" />
+    <Content Include="Images\Expenses.ico" />
+    <Content Include="Images\Expenses.png" />
+    <Content Include="Images\export.png" />
+    <Content Include="Images\FactoryRate.ico" />
+    <Content Include="Images\Finalize.png" />
+    <Content Include="Images\find.png" />
+    <Content Include="Images\first.png" />
+    <Content Include="Images\Front.jpg" />
+    <Content Include="Images\GenerateSalary.ico" />
+    <Content Include="Images\Graph.png" />
+    <Content Include="Images\Green.ico" />
+    <Content Include="Images\grid.png" />
+    <Content Include="Images\hire.png" />
+    <Content Include="Images\ImgDelete.ico" />
+    <Content Include="Images\ImgDelete.png" />
+    <Content Include="Images\ImgOK.png" />
+    <Content Include="Images\ImgSavedOk.png" />
+    <Content Include="Images\ImgUpdate.ico" />
+    <Content Include="Images\ImgUpdate.png" />
+    <Content Include="Images\import.png" />
+    <Content Include="Images\Invoice.ico" />
+    <Content Include="Images\issueorder.png" />
+    <Content Include="Images\last.png" />
+    <Content Include="Images\LatexSplash.jpg" />
+    <Content Include="Images\Login.ico" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Magenta.ico" />
+    <None Include="Images\Network.png" />
+    <None Include="My Project\app.manifest" />
+    <Content Include="Images\New.ico" />
+    <Content Include="Images\New.png" />
+    <Content Include="Images\NewStock.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\no.png" />
+    <Content Include="Images\ok.png" />
+    <Content Include="Images\ok1.png" />
+    <Content Include="Images\Order.png" />
+    <Content Include="Images\OtherExpenses.ico" />
+    <Content Include="Images\paid.gif" />
+    <None Include="Images\Paid.png" />
+    <Content Include="Images\PayBills.ico" />
+    <Content Include="Images\PayBills.png" />
+    <Content Include="Images\PettyCash.png" />
+    <Content Include="Images\Previous.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\ProfitAndLoss.ico" />
+    <Content Include="Images\Purchase.png" />
+    <Content Include="Images\PurchaseOrder.png" />
+    <Content Include="Images\purchases.png" />
+    <Content Include="Images\Quatation.png" />
+    <Content Include="Images\ReceivePayment.ico" />
+    <Content Include="Images\RecevePayment.png" />
+    <Content Include="Images\Reconcile.png" />
+    <Content Include="Images\Red.ico" />
+    <Content Include="Images\Refresh.ico" />
+    <Content Include="Images\return.png" />
+    <Content Include="Images\Row.png" />
+    <Content Include="Images\Salary.ico" />
+    <Content Include="Images\sales.png" />
+    <Content Include="Images\SalesInvoice.png" />
+    <Content Include="Images\Save.ico" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\SendToFactory.ico" />
+    <Content Include="Images\Shares.ico" />
+    <Content Include="Images\show.png" />
+    <Content Include="Images\Splash.jpg" />
+    <Content Include="Images\SplashScreen.jpg" />
+    <Content Include="Images\Stock.ico" />
+    <Content Include="Images\StockBal.png" />
+    <Content Include="Images\StockCat.png" />
+    <Content Include="Images\StockItems.png" />
+    <Content Include="Images\Summary.ico" />
+    <Content Include="Images\SupplierL.png" />
+    <Content Include="Images\SupplierRate.ico" />
+    <Content Include="Images\Suppliers.ico" />
+    <Content Include="Images\CWBatex-new.gif" />
+    <Content Include="Images\CWBatex.gif" />
+    <Content Include="Images\CWBatex.jpg" />
+    <Content Include="Images\Suppliers.png" />
+    <Content Include="Images\Transfer.ico" />
+    <Content Include="Images\unpaid.gif" />
+    <Content Include="Images\update.png" />
+    <Content Include="Images\Vehicle.ico" />
+    <Content Include="Images\Women.jpg" />
+    <Content Include="Images\world.png" />
+    <Content Include="Images\Yellow.ico" />
+    <Content Include="Images\Yes.png" />
+    <Content Include="Images\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

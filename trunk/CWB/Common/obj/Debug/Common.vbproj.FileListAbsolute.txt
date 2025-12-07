@@ -1,0 +1,9 @@
+E:\Programs\CWB\CWB\Common\bin\Debug\Common.dll
+E:\Programs\CWB\CWB\Common\bin\Debug\Common.pdb
+E:\Programs\CWB\CWB\Common\bin\Debug\Common.xml
+E:\Programs\CWB\CWB\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Programs\CWB\CWB\Common\obj\Debug\Common.Resources.resources
+E:\Programs\CWB\CWB\Common\obj\Debug\Common.vbproj.GenerateResource.Cache
+E:\Programs\CWB\CWB\Common\obj\Debug\Common.dll
+E:\Programs\CWB\CWB\Common\obj\Debug\Common.xml
+E:\Programs\CWB\CWB\Common\obj\Debug\Common.pdb

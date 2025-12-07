@@ -1,0 +1,12 @@
+E:\Programs\CWB\CWB\Common\bin\Debug\CWBCommon.dll
+E:\Programs\CWB\CWB\Common\bin\Debug\CWBCommon.pdb
+E:\Programs\CWB\CWB\Common\bin\Debug\CWBCommon.xml
+E:\Programs\CWB\CWB\Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Programs\CWB\CWB\Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Programs\CWB\CWB\Common\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Programs\CWB\CWB\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Programs\CWB\CWB\Common\obj\Debug\CWBCommon.Resources.resources
+E:\Programs\CWB\CWB\Common\obj\Debug\CWBCommon.vbproj.GenerateResource.Cache
+E:\Programs\CWB\CWB\Common\obj\Debug\CWBCommon.dll
+E:\Programs\CWB\CWB\Common\obj\Debug\CWBCommon.xml
+E:\Programs\CWB\CWB\Common\obj\Debug\CWBCommon.pdb
