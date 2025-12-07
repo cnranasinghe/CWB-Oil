@@ -370,7 +370,7 @@ Partial Public Class xrProfitnLoss
         Me.XrLabel2.SizeF = New System.Drawing.SizeF(342.0!, 25.0!)
         Me.XrLabel2.StylePriority.UseFont = False
         Me.XrLabel2.StylePriority.UseTextAlignment = False
-        Me.XrLabel2.Text = "CAR Washing BAY"
+        Me.XrLabel2.Text = "Castrol"
         Me.XrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
         'xrlFromTo

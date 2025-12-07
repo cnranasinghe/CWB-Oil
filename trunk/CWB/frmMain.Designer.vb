@@ -73,7 +73,7 @@ Partial Class frmMain
         '
         'DefaultLookAndFeel1
         '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "VS2010"
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Dark Gray"
         '
         'XtraTabbedMdiManager1
         '
@@ -88,7 +88,7 @@ Partial Class frmMain
         Me.RibbonControl.Name = "RibbonControl"
         Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage2, Me.RibbonPage4, Me.RibbonPage3})
         Me.RibbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemPictureEdit1})
-        Me.RibbonControl.Size = New System.Drawing.Size(732, 143)
+        Me.RibbonControl.Size = New System.Drawing.Size(746, 147)
         Me.RibbonControl.StatusBar = Me.RibbonStatusBar1
         '
         'BarButtonItem1
@@ -344,16 +344,16 @@ Partial Class frmMain
         '
         Me.RibbonStatusBar1.ItemLinks.Add(Me.BarStaticItem1)
         Me.RibbonStatusBar1.ItemLinks.Add(Me.bsiLoggedUser)
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 484)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 494)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(732, 33)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(746, 23)
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(732, 517)
+        Me.ClientSize = New System.Drawing.Size(746, 517)
         Me.Controls.Add(Me.RibbonStatusBar1)
         Me.Controls.Add(Me.RibbonControl)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -361,12 +361,13 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.Ribbon = Me.RibbonControl
         Me.StatusBar = Me.RibbonStatusBar1
-        Me.Text = "Car Washing Bay - Lellopitiya"
+        Me.Text = "Castrol"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RibbonControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemPictureEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

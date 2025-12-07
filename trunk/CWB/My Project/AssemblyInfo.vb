@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CAR Washing BAY")> 
+<Assembly: AssemblyTitle("Castrol")>
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Centrilla Corporation")> 
 <Assembly: AssemblyProduct("CWB")> 

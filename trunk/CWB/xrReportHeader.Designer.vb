@@ -49,7 +49,7 @@ Partial Public Class xrReportHeader
         Me.XrLabel1.Size = New System.Drawing.Size(333, 33)
         Me.XrLabel1.StylePriority.UseFont = False
         Me.XrLabel1.StylePriority.UseTextAlignment = False
-        Me.XrLabel1.Text = "CAR Washing BAY"
+        Me.XrLabel1.Text = "Castrol"
         Me.XrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'PageFooter

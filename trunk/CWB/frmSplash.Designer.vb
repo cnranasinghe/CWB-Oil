@@ -22,16 +22,17 @@ Partial Class frmSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit
+        Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
         CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureEdit1
         '
         Me.PictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureEdit1.EditValue = Global.CWB.My.Resources.Resources.Splash
+        Me.PictureEdit1.EditValue = Global.CWB.My.Resources.Resources.Splash1
         Me.PictureEdit1.Location = New System.Drawing.Point(0, 0)
         Me.PictureEdit1.Name = "PictureEdit1"
+        Me.PictureEdit1.Properties.ZoomPercent = 40.0R
         Me.PictureEdit1.Size = New System.Drawing.Size(496, 303)
         Me.PictureEdit1.TabIndex = 0
         '
